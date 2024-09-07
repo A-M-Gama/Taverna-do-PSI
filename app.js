@@ -21,6 +21,7 @@ function pesquisar() {
       titulo = dado.titulo.toLowerCase(); // transforma o titulo em letras minusculas
       descricao = dado.descricao.toLowerCase(); // transforma a descricao em letras minusculas
       tags = dado.tags.toLowerCase(); // transforma as tags em letras minusculas
+      campoPesquisa = campoPesquisa.toLowerCase(); // transforma o texto inserido da pesquisa em minuscula
       
       if (titulo.includes(campoPesquisa) || descricao.includes(campoPesquisa) || tags.includes(campoPesquisa)){
       // Constrói o HTML para cada resultado, incluindo título, descrição e link.
